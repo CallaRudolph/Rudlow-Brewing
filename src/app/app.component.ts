@@ -9,6 +9,7 @@ import { Keg } from './keg.model';
 
 export class AppComponent {
   title = 'Rudlow Brewing Co.';
+  selectedKeg = null;
 
   masterKegList: Keg[] = [
     new Keg('Flying V IPA', 'Rudlow Brewing', 140, 7.2),
@@ -19,6 +20,14 @@ export class AppComponent {
     new Keg('Breakfast Of Hefeweizen', 'Rudlow Brewing', 140, 5.1)
 
   ];
+
+  editKeg(clickedKeg){
+  this.selectedKeg = clickedKeg;
+}
+
+finishedEditing(){
+  this.selectedKeg = null;
+}
 
   addKeg(newKegFromChild: Keg) {
    this.masterKegList.push(newKegFromChild);

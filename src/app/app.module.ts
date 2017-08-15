@@ -8,13 +8,15 @@ import { KegListComponent } from './keg-list/keg-list.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { NewKegComponent } from './new-keg/new-keg.component';
+import { EditKegComponent } from './edit-keg/edit-keg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KegListComponent,
     AboutComponent,
-    NewKegComponent
+    NewKegComponent,
+    EditKegComponent
   ],
   imports: [
     BrowserModule,
