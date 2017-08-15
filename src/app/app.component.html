@@ -1,11 +1,17 @@
-<h1>{{title}}</h1>
-<router-outlet></router-outlet>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Rudlow Brewing Co.</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="about">About</a></li>
+    </ul>
+  </div>
+</nav>
 
-<!-- <div class="container">
-  <h1>
-    Rudlow Brewing Co.
-  </h1>
-  <h1>Dock Sales List:</h1>
+<div class="container">
+  <h1>{{title}}</h1>
+  <!-- <h1>{{keg.name}}</h1> -->
+  <keg-list [childKegList]="masterKegList"></keg-list>
 
-  <hr>
-</div> -->
+</div>

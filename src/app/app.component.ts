@@ -7,8 +7,6 @@ import { Keg } from './keg.model';
   styleUrls: ['./app.component.css']
 })
 
-
-
 export class AppComponent {
   title = 'Rudlow Brewing Co.';
 
