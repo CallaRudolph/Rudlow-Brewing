@@ -19,4 +19,9 @@ export class AppComponent {
     new Keg('Breakfast Of Hefeweizen', 'Rudlow Brewing', 140, 5.1)
 
   ];
+
+  addKeg(newKegFromChild: Keg) {
+   this.masterKegList.push(newKegFromChild);
+ }
+
 }

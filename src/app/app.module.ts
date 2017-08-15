@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { KegListComponent } from './keg-list/keg-list.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
+import { NewKegComponent } from './new-keg/new-keg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KegListComponent,
-    AboutComponent
+    AboutComponent,
+    NewKegComponent
   ],
   imports: [
     BrowserModule,
