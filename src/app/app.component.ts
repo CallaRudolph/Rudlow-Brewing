@@ -35,6 +35,8 @@ export class AppComponent {
 
   pourKeg(clickedKeg) {
     clickedKeg.quantity -= 1;
-    console.log(clickedKeg.quantity);
+    if (clickedKeg.quantity < 10) {
+      alert(clickedKeg.name + " is almost sold out! Change the keg!")
+    }
   }
 }
