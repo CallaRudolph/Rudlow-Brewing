@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Keg } from './../keg.model';
+import { Revenue } from './../revenue.model';
 
 @Component({
   selector: 'pour-keg',
@@ -7,7 +8,7 @@ import { Keg } from './../keg.model';
   styleUrls: ['./pour-keg.component.css']
 })
 export class PourKegComponent implements OnInit {
-  @Input() childSelectedKeg: Keg[];
+  @Input() childRevenue: Revenue[];
   // @Output() quantity = new EventEmitter();
 
   // pourKeg(clickedKeg){

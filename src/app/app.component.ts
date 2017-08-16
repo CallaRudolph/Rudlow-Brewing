@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Keg } from './keg.model';
+import { Revenue } from './revenue.model';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,10 @@ export class AppComponent {
 
   ];
 
+  masterRevenue: Revenue[] = [
+    new Revenue(0)
+  ];
+
   editKeg(clickedKeg){
     this.selectedKeg = clickedKeg;
   }
@@ -39,5 +44,6 @@ export class AppComponent {
     if (clickedKeg.quantity < 10) {
       alert(clickedKeg.name + " is almost sold out! Change the keg!")
     }
+    this.masterRevenue[0].total += clickedKeg.price;
   }
 }
