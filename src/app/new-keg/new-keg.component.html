@@ -1,5 +1,6 @@
-<h1>New Keg:</h1>
-<div id="newKeg">
+<button (click)="showAddForm()">Add new keg</button>
+<div id="newKeg" *ngIf="addKeg===true">
+  <h1>New Keg:</h1>
   <label>Name of the Beer:</label>
   <input #newName><br>
   <label>Name of Brand:</label>
