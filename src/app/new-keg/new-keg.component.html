@@ -5,8 +5,8 @@
   <label>Name of Brand:</label>
   <input #newBrand><br>
   <label>Price:</label>
-  <input #newPrice><br>
+  <input type="number" #newPrice><br>
   <label>ABV</label>
-  <input #newAlcoholContent><br>
+  <input type="number" #newAlcoholContent><br>
   <button (click)="submitForm(newName.value, newBrand.value, newPrice.value, newAlcoholContent.value); newName.value=''; newBrand.value=''; newPrice.value=''; newAlcoholContent.value='';">Add new keg!</button>
 </div>

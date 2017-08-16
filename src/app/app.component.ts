@@ -43,6 +43,6 @@ export class AppComponent {
     if (clickedKeg.quantity < 10) {
       alert(clickedKeg.name + " is almost sold out! Change the keg!")
     }
-    this.masterRevenue[0].total += clickedKeg.price;
+    this.masterRevenue[0].total += parseInt(clickedKeg.price);
   }
 }

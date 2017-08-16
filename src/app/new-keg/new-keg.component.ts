@@ -11,6 +11,7 @@ export class NewKegComponent implements OnInit {
 
   submitForm(name: string, brand: string, price: number, alcoholContent: number, quantity: number) {
     var newKegToAdd: Keg = new Keg(name, brand, price, alcoholContent, 124);
+    console.log(newKegToAdd);
     this.newKegSender.emit(newKegToAdd);
   }
   constructor() { }
