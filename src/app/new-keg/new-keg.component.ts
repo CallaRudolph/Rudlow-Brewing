@@ -9,8 +9,8 @@ import { Keg } from './../keg.model';
 export class NewKegComponent implements OnInit {
   @Output() newKegSender = new EventEmitter();
 
-  submitForm(name: string, brand: string, price: number, alcoholContent: number) {
-    var newKegToAdd: Keg = new Keg(name, brand, price, alcoholContent);
+  submitForm(name: string, brand: string, price: number, alcoholContent: number, quantity: number) {
+    var newKegToAdd: Keg = new Keg(name, brand, price, alcoholContent, 124);
     this.newKegSender.emit(newKegToAdd);
   }
   constructor() { }
