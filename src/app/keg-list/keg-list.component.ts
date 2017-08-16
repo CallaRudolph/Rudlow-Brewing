@@ -20,6 +20,14 @@ export class KegListComponent implements OnInit {
     this.clickPour.emit(kegToPour);
   }
 
+  kegStyle(currentKeg) {
+    if (currentKeg.price > 5) {
+      return "bg-danger";
+    } else {
+      return "bg-warning";
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {
