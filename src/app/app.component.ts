@@ -43,7 +43,13 @@ export class AppComponent {
     clickedKeg.quantity -= 1;
     if (clickedKeg.quantity < 10) {
       alert(clickedKeg.name + " is almost sold out! Change the keg!")
+    } if (clickedKeg.quantity === 0) {
+      clickedKeg.name = clickedKeg.name + " is SOLD OUT";
+      clickedKeg.price = 0;
+    } if (clickedKeg.quantity === -1) {
+      clickedKeg.quantity += 1
     }
+
     this.masterRevenue[0].total += parseInt(clickedKeg.price);
   }
 }
