@@ -1,8 +1,8 @@
 <p>Current Draft List:</p>
 
 <ul class="list-unstyled">
-  <li [class]="kegStyle(currentKeg)" *ngFor="let currentKeg of childKegList"><img src="../assets/img/keg2.png">{{currentKeg.name}}, {{currentKeg.brand}} ${{currentKeg.price}}/Pint <span [class]="kegStrength(currentKeg)"> ABV {{currentKeg.alcoholContent}}%</span>, current quantity: {{currentKeg.quantity}} pints
+  <li [class]="kegStyle(currentKeg)" *ngFor="let currentKeg of childKegList"><img src="../assets/img/keg2.png"(click)="pourButtonHasBeenClicked(currentKeg)">{{currentKeg.name}}, {{currentKeg.brand}} ${{currentKeg.price}}/Pint <span [class]="kegStrength(currentKeg)"> ABV {{currentKeg.alcoholContent}}%</span>, current quantity: {{currentKeg.quantity}} pints
   <br>
   <button (click)="editButtonHasBeenClicked(currentKeg)">Edit!</button>
-  <button (click)="pourButtonHasBeenClicked(currentKeg)">Pour!</button></li>
+  </li>
 </ul>
