@@ -1,6 +1,7 @@
 <p>Current Draft List:</p>
 <ul>
-  <li *ngFor="let currentKeg of childKegList">{{currentKeg.name}}, {{currentKeg.brand}} ${{currentKeg.price}}/Pint ABV {{currentKeg.alcoholContent}}%
+  <li *ngFor="let currentKeg of childKegList">{{currentKeg.name}}, {{currentKeg.brand}} ${{currentKeg.price}}/Pint ABV {{currentKeg.alcoholContent}}%, current quantity: {{currentKeg.quantity}} pints
+  <br>
   <button (click)="editButtonHasBeenClicked(currentKeg)">Edit!</button>
   <button (click)="pourButtonHasBeenClicked(currentKeg)">Pour!</button></li>
 </ul>
