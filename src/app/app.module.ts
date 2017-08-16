@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { NewKegComponent } from './new-keg/new-keg.component';
 import { EditKegComponent } from './edit-keg/edit-keg.component';
 import { PourKegComponent } from './pour-keg/pour-keg.component';
+// import { AlcoholContentPipe } from './alcoholContent.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PourKegComponent } from './pour-keg/pour-keg.component';
     AboutComponent,
     NewKegComponent,
     EditKegComponent,
-    PourKegComponent
+    PourKegComponent,
+    // AlcoholContentPipe
   ],
   imports: [
     BrowserModule,

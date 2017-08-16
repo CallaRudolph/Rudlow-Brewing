@@ -28,6 +28,14 @@ export class KegListComponent implements OnInit {
     }
   }
 
+  kegStrength(currentKeg) {
+    if (currentKeg.alcoholContent > 7) {
+      return "hi-abv";
+    } else {
+      return "";
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {
