@@ -1,11 +1,11 @@
-<div class="continer">
+<div class="container">
+  <div *ngIf="childSelectedKeg">
     <h1>OOPS, let's redo that keg:</h1>
-    <div *ngIf="childSelectedKeg">
-      <label>Edit</label>
-      <input [(ngModel)]=childSelectedKeg.name>
-      <input [(ngModel)]=childSelectedKeg.brand>
-      <input [(ngModel)]=childSelectedKeg.price>
-      <input [(ngModel)]=childSelectedKeg.alcoholContent>
-      <button (click)="doneButtonClicked()">Finished Editing</button>
+    <label>Edit</label>
+    <input [(ngModel)]=childSelectedKeg.name>
+    <input [(ngModel)]=childSelectedKeg.brand>
+    <input [(ngModel)]=childSelectedKeg.price>
+    <input [(ngModel)]=childSelectedKeg.alcoholContent>
+    <button (click)="doneButtonClicked()">Finished Editing</button>
   </div>
 </div>

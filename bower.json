@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/jakeruleaux/tap-room",
   "ignore": [
     "**/.*",
     "node_modules",

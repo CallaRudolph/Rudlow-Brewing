@@ -9,6 +9,7 @@ import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { NewKegComponent } from './new-keg/new-keg.component';
 import { EditKegComponent } from './edit-keg/edit-keg.component';
+import { PourKegComponent } from './pour-keg/pour-keg.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EditKegComponent } from './edit-keg/edit-keg.component';
     KegListComponent,
     AboutComponent,
     NewKegComponent,
-    EditKegComponent
+    EditKegComponent,
+    PourKegComponent
   ],
   imports: [
     BrowserModule,
