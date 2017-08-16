@@ -11,6 +11,7 @@ export class KegListComponent implements OnInit {
   @Input() childKegList: Keg[];
   @Output() clickSender = new EventEmitter();
   @Output() clickPour = new EventEmitter();
+  filterByAlcohol: string = "allKegs";
 
   editButtonHasBeenClicked(kegToEdit: Keg) {
     this.clickSender.emit(kegToEdit);
@@ -34,6 +35,14 @@ export class KegListComponent implements OnInit {
     } else {
       return "";
     }
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByAlcohol = optionFromMenu;
+  }
+
+  toggleDone(clickedKeg: Keg, setAlcohol: number) {
+    clickedKeg.alcoholContent = setAlcohol;
   }
 
   constructor() { }

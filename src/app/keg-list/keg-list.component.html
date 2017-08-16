@@ -1,7 +1,12 @@
-<p>Current Draft List:</p>
-
+<h3>Current Draft List:</h3>
+<select (change)="onChange($event.target.value)">
+  <option value="allKegs" selected="selected">All Kegs</option>
+  <option value="highAbv">High Alcohol</option>
+  <option value="lowAbv">Low Alcohol</option>
+</select>
+<br><br>
 <ul class="list-unstyled" id="kegList">
-  <li [class]="kegStyle(currentKeg)" *ngFor="let currentKeg of childKegList"><img src="../assets/img/keg2.png"(click)="pourButtonHasBeenClicked(currentKeg)">{{currentKeg.name}}, {{currentKeg.brand}} ${{currentKeg.price}}/Pint <span [class]="kegStrength(currentKeg)"> ABV {{currentKeg.alcoholContent}}%</span>, current quantity: {{currentKeg.quantity}} pints
+  <li [class]="kegStyle(currentKeg)" *ngFor="let currentKeg of childKegList | alcoholContent:filterByAlcohol"><img src="../assets/img/keg2.png"(click)="pourButtonHasBeenClicked(currentKeg)">{{currentKeg.name}}, {{currentKeg.brand}} ${{currentKeg.price}}/Pint <span [class]="kegStrength(currentKeg)"> ABV {{currentKeg.alcoholContent}}%</span>, current quantity: {{currentKeg.quantity}} pints
   <br>
   <button (click)="editButtonHasBeenClicked(currentKeg)">Edit!</button>
   </li>
