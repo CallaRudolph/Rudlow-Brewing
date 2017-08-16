@@ -6,7 +6,6 @@ import { Revenue } from './revenue.model';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  styles: ['./img']
 })
 
 export class AppComponent {
