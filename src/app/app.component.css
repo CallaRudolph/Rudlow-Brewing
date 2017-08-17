@@ -49,4 +49,9 @@ img {
   min-width: 100px;
 }
 
+h1 {
+  color: cyan;
+  text-shadow: 1px 1px white;
+  text-align: center;
+}
 /*this works*/

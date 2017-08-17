@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
         currentKeg.price -= 1;
         // currentKeg.name = "HAPPY HOUR TIMEEEEEEE " + currentKeg.name;
       })
-      this.banner = "IT'S HAPPY HOUR!";
+      this.banner = "HOLY CAMOLI IT'S HAPPY HOUR! from 2pm-4pm, restrictions apply";
     }
   }
   // happyHour() {
