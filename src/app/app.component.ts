@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
   currentTime = new Date();
   hour: number = this.currentTime.getHours();
   minute: number = this.currentTime.getMinutes();
-  // console.log(this.currentTime);
 
   banner = null;
   selectedKeg = null;

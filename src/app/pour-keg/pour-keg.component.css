@@ -5,17 +5,14 @@
 }*/
 
 .well {
-  /*background-color: #fdf0d5;*/
   background-image: url("/assets/img/pour.jpg");
   opacity: .80;
   display: cover;
   margin-left: 80px;
   margin-right: 80px;
-  /*padding-right: 80px;*/
 }
 
 h2 {
-  /*color: #331832;*/
   font-size: 60px;
   text-align: center;
   color: white;

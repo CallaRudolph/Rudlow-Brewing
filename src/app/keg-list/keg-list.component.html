@@ -10,7 +10,6 @@
     <div class="flex-item">
       <li>
         <div class="well" [id]="kegStyle(currentKeg)"><img src="../assets/img/keg2.png"(click)="pourButtonHasBeenClicked(currentKeg)"> <<< > {{currentKeg.name}}, {{currentKeg.brand}}: ${{currentKeg.price}}/Pint, <span [class]="kegStrength(currentKeg)"> ABV {{currentKeg.alcoholContent}}%</span>, current quantity: {{currentKeg.quantity}} pints >>>>>
-        <!-- <br> -->
         <button (click)="editButtonHasBeenClicked(currentKeg)">Edit!</button>
         </div>
       </li>

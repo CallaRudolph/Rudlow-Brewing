@@ -16,11 +16,8 @@
 }
 
 #done {
-  /*background-color: #b48f74;*/
   background-image: url("/assets/img/flight.jpg");
   color: #c3c493;
   text-shadow: 2px 2px black;
   font-size: 50px;
-  /*margin-left: 200px;
-  margin-right: 200px;*/
 }

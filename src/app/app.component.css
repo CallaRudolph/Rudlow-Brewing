@@ -7,9 +7,7 @@
 }
 
 #page {
-  /*display: flex;*/
-  /*flex-direction: column;
-  flex-wrap: wrap;*/
+
   background-color: #8b633c;
   font-family: 'Just Another Hand', cursive;
   font-size: 25px;
@@ -36,9 +34,6 @@
   flex-grow: 1;
   margin: 5px;
   word-break: normal;
-
-  /*min-width: 250px;
-  max-width: 300px;*/
 }
 
 .item3 {
@@ -46,9 +41,6 @@
   flex-grow: 1;
   margin: 5px;
   word-break: normal;
-
-  /*min-width: 250px;
-  max-width: 300px;*/
 }
 
 .item4 {
@@ -56,15 +48,11 @@
   flex-grow: 1;
   margin: 5px;
   word-break: normal;
-
-  /*min-width: 250px;
-  max-width: 300px;*/
 }
 
 img {
   padding-top: 10px;
   padding-bottom: 10px;
-  /*padding-left: 20px;*/
   width: 50%;
   height: 70%;
 }
@@ -98,4 +86,3 @@ h1 {
   text-shadow: 1px 1px white;
   text-align: center;
 }
-/*this works*/

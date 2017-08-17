@@ -3,7 +3,7 @@
   <div class="container">
     <div class="navbar-header" id="flex-container">
       <div class="item1">
-        <h1 id="header">Rudlow Brewing Co.</h1>
+        <h1 id="header">{{title}}.</h1>
       </div>
       <div class="item2">
         <img src="../assets/img/302crest.jpg">
@@ -21,7 +21,6 @@
   </div>
 </nav>
 <div class="container" id="page">
-  <!-- <p ng-bind="date | date:'HH:mm'"></p> -->
   <h1>{{banner}}<p>The clock on the wall says {{currentTime | date:'h:mm'}}.....</p></h1>
   <keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)" (clickPour)="pourKeg($event)"></keg-list>
   <div class="row">
@@ -34,9 +33,7 @@
     </div>
     <div class="col-md-1"></div>
   </div>
-    <!-- <div class="col-md-4"> -->
-    <edit-keg [childSelectedKeg]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></edit-keg>
-    <!-- </div> -->
+  <edit-keg [childSelectedKeg]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></edit-keg>
 
   <!-- <router-outlet></router-outlet> -->
 </div>

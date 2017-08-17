@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /*justify-content: left;*/
 }
 
 .flex-item {
@@ -35,16 +34,6 @@ h1 {
 #cheap {
   background-color: #c6a77c;
 }
-
-/*.well {
-margin-right: 60px;
-}*/
-
-/*li {
-padding-left: 80px;
-padding-right: 80px;
-}*/
-
 
 /*#kegList {
 flex-grow: 6;
