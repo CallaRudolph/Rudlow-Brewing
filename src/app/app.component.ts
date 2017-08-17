@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   minute: number = this.currentTime.getMinutes();
   // console.log(this.currentTime);
 
+  banner = null;
   selectedKeg = null;
 
   masterKegList: Keg[] = [
@@ -59,13 +60,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() : void {
-    console.log("here we are");
-    console.log(this.hour);
     if (this.hour >= 14 && this.hour <= 16) {
       this.masterKegList.forEach(function(currentKeg) {
         currentKeg.price -= 1;
-
+        // currentKeg.name = "HAPPY HOUR TIMEEEEEEE " + currentKeg.name;
       })
+      this.banner = "IT'S HAPPY HOUR!";
     }
   }
   // happyHour() {
