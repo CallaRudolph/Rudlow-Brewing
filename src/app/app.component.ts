@@ -62,7 +62,10 @@ export class AppComponent implements OnInit {
     console.log("here we are");
     console.log(this.hour);
     if (this.hour >= 14 && this.hour <= 16) {
-      this.masterKegList[0].price -= 1;
+      this.masterKegList.forEach(function(currentKeg) {
+        currentKeg.price -= 1;
+
+      })
     }
   }
   // happyHour() {
