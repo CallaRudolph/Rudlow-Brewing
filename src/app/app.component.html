@@ -10,7 +10,7 @@
           <img src="../assets/img/302crest.jpg">
         </div>
         <div class="col-md-1">
-          <img src="../assets/img/302crest.jpg">
+          <a href="https://en.wikipedia.org/wiki/Brewing"><img src="../assets/img/302crest.jpg"></a>
         </div>
         <div class="col-md-1">
           <img src="../assets/img/302crest.jpg">
@@ -27,12 +27,14 @@
   <h1>{{banner}}<p>The clock on the wall says {{currentTime | date:'h:mm'}}.....</p></h1>
   <keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)" (clickPour)="pourKeg($event)"></keg-list>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
       <new-keg (newKegSender)="addKeg($event)"></new-keg>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5">
       <pour-keg [childRevenue]="masterRevenue"></pour-keg>
     </div>
+    <div class="col-md-1"></div>
   </div>
     <!-- <div class="col-md-4"> -->
     <edit-keg [childSelectedKeg]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></edit-keg>

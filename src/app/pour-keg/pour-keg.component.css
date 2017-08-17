@@ -9,8 +9,9 @@
   background-image: url("/assets/img/pour.jpg");
   opacity: .80;
   display: cover;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-left: 80px;
+  margin-right: 80px;
+  /*padding-right: 80px;*/
 }
 
 h2 {

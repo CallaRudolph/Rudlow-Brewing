@@ -5,11 +5,15 @@
   <option value="lowAbv">Low Alcohol Content</option>
 </select>
 <br><br>
-<ul class="list-unstyled" id="kegList">
-  <li  *ngFor="let currentKeg of childKegList | alcoholContent:filterByAlcohol">
-    <div class="well" [id]="kegStyle(currentKeg)"><img src="../assets/img/keg2.png"(click)="pourButtonHasBeenClicked(currentKeg)"> <<< > {{currentKeg.name}}, {{currentKeg.brand}}: ${{currentKeg.price}}/Pint, <span [class]="kegStrength(currentKeg)"> ABV {{currentKeg.alcoholContent}}%</span>, current quantity: {{currentKeg.quantity}} pints >>>>>
-    <!-- <br> -->
-    <button (click)="editButtonHasBeenClicked(currentKeg)">Edit!</button>
+<div class="flex-container">
+  <ul class="list-unstyled" id="kegList" *ngFor="let currentKeg of childKegList | alcoholContent:filterByAlcohol">
+    <div class="flex-item">
+      <li>
+        <div class="well" [id]="kegStyle(currentKeg)"><img src="../assets/img/keg2.png"(click)="pourButtonHasBeenClicked(currentKeg)"> <<< > {{currentKeg.name}}, {{currentKeg.brand}}: ${{currentKeg.price}}/Pint, <span [class]="kegStrength(currentKeg)"> ABV {{currentKeg.alcoholContent}}%</span>, current quantity: {{currentKeg.quantity}} pints >>>>>
+        <!-- <br> -->
+        <button (click)="editButtonHasBeenClicked(currentKeg)">Edit!</button>
+        </div>
+      </li>
     </div>
-  </li>
-</ul>
+  </ul>
+</div>
