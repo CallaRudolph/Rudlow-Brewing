@@ -60,19 +60,13 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() : void {
-    if (this.hour >= 14 && this.hour <= 16) {
+    console.log(this.hour);
+    if (this.hour < 16 && this.hour >= 14) {
       this.masterKegList.forEach(function(currentKeg) {
         currentKeg.price -= 1;
-        // currentKeg.name = "HAPPY HOUR TIMEEEEEEE " + currentKeg.name;
       })
       this.banner = "HOLY CAMOLI IT'S HAPPY HOUR! from 2pm-4pm, restrictions apply";
     }
   }
-  // happyHour() {
-  //
-  // }
-  // setInterval(this.hour {
-  //
-  // }, 1000);
 
 }
