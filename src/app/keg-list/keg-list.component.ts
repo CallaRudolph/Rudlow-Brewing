@@ -23,9 +23,11 @@ export class KegListComponent implements OnInit {
 
   kegStyle(currentKeg) {
     if (currentKeg.price > 5) {
+      return "expensive";
+    } else if (currentKeg.price === 0) {
       return "bg-danger";
     } else {
-      return "bg-warning";
+      return "cheap";
     }
   }
 

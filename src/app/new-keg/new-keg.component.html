@@ -1,13 +1,15 @@
-<button (click)="showAddForm()">Add new keg</button>
+<br>
+<button id="done" (click)="showAddForm()">Add new keg</button>
 <div id="newKeg" *ngIf="addKeg===true">
   <h1>New Keg:</h1>
   <label>Name of the Beer:</label>
-  <input #newName><br>
+  <input #newName>
   <label>Name of Brand:</label>
   <input #newBrand><br>
-  <label>Price:</label>
-  <input type="number" #newPrice><br>
-  <label>ABV</label>
-  <input type="number" #newAlcoholContent><br>
+  <label>Price: $</label>
+  <input type="number" #newPrice>
+  <label>ABV:</label>
+  <input type="number" #newAlcoholContent>
+  <label>%</label><br><br>
   <button (click)="submitForm(newName.value, newBrand.value, newPrice.value, newAlcoholContent.value); newName.value=''; newBrand.value=''; newPrice.value=''; newAlcoholContent.value='';">Add new keg!</button>
 </div>

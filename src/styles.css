@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-h1 {
-  color: red;
+.background {
+  /*background-color: #b2cede;*/
+  background-image: url("/assets/img/bg.jpg");
+  display: block;
+  margin: auto;
+  /*width: 50%;*/
 }
-
 
 /*this is not linked properly*/

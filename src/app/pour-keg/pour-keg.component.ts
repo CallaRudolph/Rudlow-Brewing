@@ -9,12 +9,16 @@ import { Revenue } from './../revenue.model';
 })
 export class PourKegComponent implements OnInit {
   @Input() childRevenue: Revenue[];
-  // @Output() quantity = new EventEmitter();
 
-  // pourKeg(clickedKeg){
-  //   var quantity = (clickedKeg.quantity - 1);
-  //   this.quantity.emit();
-  // }
+  revenueTotal(currentRevenue) {
+    if (currentRevenue.total > 100) {
+      return "rich";
+    } else if (currentRevenue.total < 30) {
+      return "poor";
+    } else if (currentRevenue.total === 0) {
+      return "";
+    }
+  }
 
   constructor() { }
 

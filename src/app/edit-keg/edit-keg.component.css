@@ -3,3 +3,19 @@
   height: 100px;
   min-width: 100px;
 }*/
+
+
+#editKeg {
+  margin-left: 100px;
+  padding: 10px;
+}
+
+input {
+  color: #a0acad;
+}
+
+button {
+  background-color: #85877c;
+  color: white;
+  text-shadow: 2px 2px grey;
+}

@@ -1,11 +1,28 @@
-.container {
+#header {
+  background-color: #c6b5a2;
+  color: #7ebeab;
+  text-shadow: 1px 1px white;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 80px;
+}
+
+#page {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: #8b633c;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 25px;
+  margin-bottom: 3px;
+  color: #463d2d;
 }
 
-#header {
-  color: red;
+img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*padding-left: 20px;*/
+  width: 70%;
+  height: 70%;
 }
 
 #kegList {
@@ -20,8 +37,6 @@
   min-width: 100px;
 }
 
-
-
 #editKeg {
   flex-grow: 2;
   height: 100px;
@@ -33,6 +48,5 @@
   height: 100px;
   min-width: 100px;
 }
-
 
 /*this works*/

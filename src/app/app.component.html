@@ -1,20 +1,43 @@
-<nav class="navbar navbar-default">
+<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+<nav class="navbar navbar-default" id="header">
   <div class="container">
     <div class="navbar-header">
-      <h1 id="header">Rudlow Brewing Co.</h1>
+      <div class="row">
+        <div class="col-md-9">
+          <h1 id="header">Rudlow Brewing Co.</h1>
+        </div>
+        <div class="col-md-1">
+          <img src="../assets/img/302crest.jpg">
+        </div>
+        <div class="col-md-1">
+          <img src="../assets/img/302crest.jpg">
+        </div>
+        <div class="col-md-1">
+          <img src="../assets/img/302crest.jpg">
+        </div>
+      </div>
     </div>
-    <ul class="nav navbar-nav navbar-right">
+    <!-- <ul class="nav navbar-nav navbar-right">
       <li><a routerLink="about">About</a></li>
-    </ul>
+    </ul> -->
   </div>
 </nav>
 
-<div class="container">
+<div class="container" id="page">
   <!-- <h1 id="header">{{title}}</h1> -->
+
   <keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)" (clickPour)="pourKeg($event)"></keg-list>
-  <new-keg (newKegSender)="addKeg($event)"></new-keg>
-  <edit-keg [childSelectedKeg]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></edit-keg>
-  <pour-keg [childRevenue]="masterRevenue"></pour-keg>
-  
+  <div class="row">
+    <div class="col-md-6">
+      <new-keg (newKegSender)="addKeg($event)"></new-keg>
+    </div>
+    <div class="col-md-6">
+      <pour-keg [childRevenue]="masterRevenue"></pour-keg>
+    </div>
+  </div>
+    <!-- <div class="col-md-4"> -->
+    <edit-keg [childSelectedKeg]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></edit-keg>
+    <!-- </div> -->
+
   <!-- <router-outlet></router-outlet> -->
 </div>

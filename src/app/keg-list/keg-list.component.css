@@ -1,10 +1,32 @@
 .hi-abv {
-  color:red;
+  color: #fdf0d5;
+  text-shadow: 1px 1px red;
 }
 
 img {
   width: 5%;
   height: 5%;
+}
+
+h1 {
+  color: #fdf0d5;
+}
+
+#expensive {
+  background-color: #d9dbd8;
+}
+
+#cheap {
+  background-color: #c6a77c;
+}
+
+/*.well {
+  margin-right: 60px;
+}*/
+
+li {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /*#kegList {

@@ -4,6 +4,29 @@
   min-width: 100px;
 }*/
 
+.well {
+  /*background-color: #fdf0d5;*/
+  background-image: url("/assets/img/pour.jpg");
+  opacity: .80;
+  display: cover;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
 h2 {
-  color: blue;
+  /*color: #331832;*/
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+.poor {
+  color: #ded6a7;
+  text-shadow: 3px 3px black;
+}
+
+.rich {
+  color: #f7c35b;
+  text-shadow: 3px 3px black;
 }

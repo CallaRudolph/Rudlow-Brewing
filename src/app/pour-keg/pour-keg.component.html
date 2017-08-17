@@ -1,3 +1,4 @@
-<div id="pourKeg">
-  <h2 *ngFor="let currentRevenue of childRevenue">Revenue ${{currentRevenue.total}}</h2>
+<br>
+<div class="well" id="pourKeg">
+  <h2 [class]="revenueTotal(currentRevenue)" *ngFor="let currentRevenue of childRevenue">Revenue ${{currentRevenue.total}}</h2>
 </div>
