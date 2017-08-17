@@ -45,9 +45,7 @@ export class KegListComponent implements OnInit {
 
   toggleDone(clickedKeg: Keg, setAlcohol: number) {
     clickedKeg.alcoholContent = setAlcohol;
-  }
-
-  constructor() { }
+  }  
 
   ngOnInit() {
   }

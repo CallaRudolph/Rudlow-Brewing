@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Keg } from './keg.model';
 import { Revenue } from './revenue.model';
 
@@ -8,8 +8,13 @@ import { Revenue } from './revenue.model';
   styleUrls: ['./app.component.css'],
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Rudlow Brewing Co.';
+  currentTime = new Date();
+  hour: number = this.currentTime.getHours();
+  minute: number = this.currentTime.getMinutes();
+  // console.log(this.currentTime);
+
   selectedKeg = null;
 
   masterKegList: Keg[] = [
@@ -52,4 +57,19 @@ export class AppComponent {
 
     this.masterRevenue[0].total += parseInt(clickedKeg.price);
   }
+
+  ngOnInit() : void {
+    console.log("here we are");
+    console.log(this.hour);
+    if (this.hour >= 14 && this.hour <= 16) {
+      this.masterKegList[0].price -= 1;
+    }
+  }
+  // happyHour() {
+  //
+  // }
+  // setInterval(this.hour {
+  //
+  // }, 1000);
+
 }
