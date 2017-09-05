@@ -7,7 +7,6 @@
 }
 
 #page {
-
   background-color: #8b633c;
   font-family: 'Just Another Hand', cursive;
   font-size: 25px;
@@ -22,11 +21,14 @@
   justify-content: flex-start;
 }
 
+#banner {
+  color: #7ebeab;
+}
+
 .item1 {
   order: 1;
   flex-grow: 6;
   margin: 50px;
-
 }
 
 .item2 {
@@ -34,6 +36,7 @@
   flex-grow: 1;
   margin: 5px;
   word-break: normal;
+  max-width: 100px;
 }
 
 .item3 {
@@ -41,6 +44,7 @@
   flex-grow: 1;
   margin: 5px;
   word-break: normal;
+  max-width: 100px;
 }
 
 .item4 {
@@ -48,6 +52,7 @@
   flex-grow: 1;
   margin: 5px;
   word-break: normal;
+  max-width: 100px;
 }
 
 img {
@@ -56,30 +61,6 @@ img {
   width: 50%;
   height: 70%;
 }
-
-/*#kegList {
-  flex-grow: 6;
-  height: 400px;
-  min-width: 400px;
-}
-
-#newKeg {
-  flex-grow: 2;
-  height: 100px;
-  min-width: 100px;
-}
-
-#editKeg {
-  flex-grow: 2;
-  height: 100px;
-  min-width: 100px;
-}
-
-#pourKeg {
-  flex-grow: 2;
-  height: 100px;
-  min-width: 100px;
-}*/
 
 h1 {
   color: cyan;

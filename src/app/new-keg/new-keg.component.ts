@@ -17,11 +17,10 @@ export class NewKegComponent implements OnInit {
     this.addKeg = false;
   }
 
-
   showAddForm() {
     this.addKeg = true;
-
   }
+  
   constructor() { }
 
   ngOnInit() {

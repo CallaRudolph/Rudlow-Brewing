@@ -8,14 +8,13 @@ import { Revenue } from './revenue.model';
   styleUrls: ['./app.component.css'],
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'Rudlow Brewing Co.';
+  selectedKeg = null;
+  banner = null;
   currentTime = new Date();
   hour: number = this.currentTime.getHours();
   minute: number = this.currentTime.getMinutes();
-
-  banner = null;
-  selectedKeg = null;
 
   masterKegList: Keg[] = [
     new Keg('Flying V IPA', 'Rudlow Brewing', 5, 7.2, 124),
@@ -24,7 +23,6 @@ export class AppComponent implements OnInit {
     new Keg('New Moon Imperial Porter', 'Rudlow Brewing', 8, 10.2, 124),
     new Keg('Falling Leaves ESB', 'Rudlow Brewing', 5, 4.7, 124),
     new Keg('Breakfast Of Hefeweizen', 'Rudlow Brewing', 5, 5.1, 124)
-
   ];
 
   masterRevenue: Revenue[] = [
@@ -41,7 +39,6 @@ export class AppComponent implements OnInit {
 
   addKeg(newKegFromChild: Keg) {
     this.masterKegList.push(newKegFromChild);
-
   }
 
   pourKeg(clickedKeg) {
@@ -54,12 +51,10 @@ export class AppComponent implements OnInit {
     } if (clickedKeg.quantity === -1) {
       clickedKeg.quantity += 1
     }
-
     this.masterRevenue[0].total += parseInt(clickedKeg.price);
   }
 
   ngOnInit() : void {
-    console.log(this.hour);
     if (this.hour < 16 && this.hour >= 14) {
       this.masterKegList.forEach(function(currentKeg) {
         currentKeg.price -= 1;
@@ -67,5 +62,4 @@ export class AppComponent implements OnInit {
       this.banner = "HOLY CAMOLI IT'S HAPPY HOUR! from 2pm-4pm, restrictions apply";
     }
   }
-
 }
