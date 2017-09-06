@@ -14,12 +14,12 @@ _This image is a screenshot of the splash page during happy hour_
 
 ## Installation
 
-* Open Github site in your browser: https://github.com/CallaRudolph/js-taproom
+* Open Github site in your browser: https://github.com/CallaRudolph/Rudlow-Brewing
 * Select green drop-down box to Clone or Download
 * Open Terminal on your computer and follow these steps:
   * `$ cd desktop`
   * `$ git clone <paste repository-url>`
-  * `$ cd js-taproom`
+  * `$ cd Rudlow-Brewing`
   * `$ npm install`
   * `$ bower install`
   * `$ ng build`
